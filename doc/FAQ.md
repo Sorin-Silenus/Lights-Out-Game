@@ -1,0 +1,6 @@
+A couple of questions that might come up.
+
+# Why do I need a vertex shader? Why would I want to make transformations if I'm just working in 2D?
+So, one would think that, yeah, surely there would be fewer transformations when working in 2D than 3D, right? Well, yes, however, OpenGL is 3D by default. So since that is the case, we actually need to do transformations to turn 3D into 2D. Weird, right? This means that quite a few of our transformations that are present in the 2D projects, are not there in 3D ones.
+# Why do I need to swap buffers?
+So these days, most computers use a technique called double buffering. With this, a program will actually have two screens that it switches between every frame. The idea is that the program will draw all the stuff for the frame on one screen before it displays. The idea of this is to prevent flickering. So essentially, while one screen has everything drawn on one, the other will clear and have everything it needs drawn to it generated before it has to display. Pretty clever, isn't it?
